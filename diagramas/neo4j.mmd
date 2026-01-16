@@ -1,0 +1,39 @@
+erDiagram
+    TEAM ||--o{ PLAYER : has
+    TEAM ||--|| ARENA : home_arena
+    TEAM ||--|| COACH : coaches
+    GAME }o--|| ARENA : played_at
+    GAME }o--|| SEASON : in_season
+    GAME }o--|| TEAM : home_team
+    GAME }o--|| TEAM : away_team
+    PLAYER }o--o{ GAME : played_in
+
+    TEAM {
+      string id
+      string name
+      string city
+      string conference
+      string division
+    }
+    PLAYER {
+      string id
+      string name
+      string position
+    }
+    COACH {
+      string id
+      string name
+    }
+    ARENA {
+      string id
+      string name
+      string city
+    }
+    GAME {
+      string id
+      date date
+    }
+    SEASON {
+      string id
+      string name
+    }

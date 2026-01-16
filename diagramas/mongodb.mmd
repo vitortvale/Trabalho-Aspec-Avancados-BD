@@ -1,0 +1,41 @@
+erDiagram
+    TEAMS ||--o{ PLAYERS : roster
+    TEAMS ||--|| ARENAS : arena
+    GAMES ||--o{ BOXSCORE : stats
+    GAMES }o--|| TEAMS : home_team
+    GAMES }o--|| TEAMS : away_team
+    GAMES }o--|| ARENAS : arena
+
+    TEAMS {
+      string _id
+      string name
+      string city
+      string conference
+      string division
+      string arenaId
+    }
+    PLAYERS {
+      string _id
+      string name
+      string position
+      string teamId
+    }
+    ARENAS {
+      string _id
+      string name
+      string city
+    }
+    GAMES {
+      string _id
+      date date
+      string season
+      string arenaId
+    }
+    BOXSCORE {
+      string playerId
+      string teamId
+      int points
+      int rebounds
+      int assists
+      int minutes
+    }
