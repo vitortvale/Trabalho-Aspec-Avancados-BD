@@ -169,13 +169,8 @@ ORDER BY points DESC;
 // Q17: Eficiência ofensiva (pontos por jogo)
 // Time que mais pontua em média
 // Melhor ataque da liga.
-
-MATCH (g:Game)-[h:HOME_TEAM]->(t:Team)
-WITH t, h.score AS pts
-UNION ALL
-MATCH (g:Game)-[a:AWAY_TEAM]->(t:Team)
-WITH t, a.score AS pts
-RETURN t.id AS team, round(avg(pts),1) AS avgPoints
+MATCH (g:Game)-[r:HOME_TEAM|AWAY_TEAM]->(t:Team)
+RETURN t.id AS team, round(avg(r.score), 1) AS avgPoints
 ORDER BY avgPoints DESC;
 
 
