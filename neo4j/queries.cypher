@@ -179,18 +179,22 @@ ORDER BY avgPoints DESC;
 // Q18: Melhor defesa
 // Time que menos sofre pontos
 // Quem ganha jogo defendendo.
-
-MATCH (g:Game)-[h:HOME_TEAM]->(home:Team)
-MATCH (g)-[a:AWAY_TEAM]->(away:Team)
-WITH home AS team, a.score AS conceded
-UNION ALL
-MATCH (g:Game)-[h:HOME_TEAM]->(home:Team)
-MATCH (g)-[a:AWAY_TEAM]->(away:Team)
-WITH away AS team, h.score AS conceded
+CALL {
+    // Parte 1: Time da Casa sofrendo pontos do Visitante
+    MATCH (g:Game)-[h:HOME_TEAM]->(home:Team)
+    MATCH (g)-[a:AWAY_TEAM]->(away:Team)
+    RETURN home AS team, a.score AS conceded
+    
+    UNION ALL
+    
+    // Parte 2: Time Visitante sofrendo pontos da Casa
+    MATCH (g:Game)-[h:HOME_TEAM]->(home:Team)
+    MATCH (g)-[a:AWAY_TEAM]->(away:Team)
+    RETURN away AS team, h.score AS conceded
+}
+// Agora calculamos a média sobre o resultado total da união
 RETURN team.id AS team, round(avg(conceded),1) AS avgPointsAgainst
 ORDER BY avgPointsAgainst ASC;
-
-
 
 
 // Q19: Jogadores “vilões”
