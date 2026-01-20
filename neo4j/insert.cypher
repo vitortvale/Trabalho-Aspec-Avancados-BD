@@ -112,3 +112,101 @@ MERGE (herro)-[:PLAYED_IN {points:21, rebounds:4, assists:5, minutes:34}]->(g4);
 MERGE (lebron)-[:PLAYED_IN {points:25, rebounds:6, assists:7, minutes:36}]->(g4);
 MERGE (davis)-[:PLAYED_IN {points:22, rebounds:14, assists:2, minutes:35}]->(g4);
 MERGE (russell)-[:PLAYED_IN {points:13, rebounds:3, assists:8, minutes:32}]->(g4);
+
+// Novos Times, Arenas, Técnicos e Jogadores
+MERGE (ball:Arena {id:'BALL', name:'Ball Arena', city:'Denver'});
+MERGE (fiserv:Arena {id:'FISERV', name:'Fiserv Forum', city:'Milwaukee'});
+MERGE (foot:Arena {id:'FOOT', name:'Footprint Center', city:'Phoenix'});
+MERGE (aac:Arena {id:'AAC', name:'American Airlines Center', city:'Dallas'});
+
+MERGE (den:Team {id:'DEN', name:'Denver Nuggets', city:'Denver', conference:'West', division:'Northwest'});
+MERGE (mil:Team {id:'MIL', name:'Milwaukee Bucks', city:'Milwaukee', conference:'East', division:'Central'});
+MERGE (phx:Team {id:'PHX', name:'Phoenix Suns', city:'Phoenix', conference:'West', division:'Pacific'});
+MERGE (dal:Team {id:'DAL', name:'Dallas Mavericks', city:'Dallas', conference:'West', division:'Southwest'});
+
+MERGE (malone:Coach {id:'C5', name:'Michael Malone'});
+MERGE (doc:Coach {id:'C6', name:'Doc Rivers'});
+MERGE (bud:Coach {id:'C7', name:'Mike Budenholzer'});
+MERGE (kidd:Coach {id:'C8', name:'Jason Kidd'});
+
+MERGE (jokic:Player {id:'P13', name:'Nikola Jokic', position:'C'});
+MERGE (murray:Player {id:'P14', name:'Jamal Murray', position:'PG'});
+MERGE (giannis:Player {id:'P15', name:'Giannis Antetokounmpo', position:'PF'});
+MERGE (lillard:Player {id:'P16', name:'Damian Lillard', position:'PG'});
+MERGE (durant:Player {id:'P17', name:'Kevin Durant', position:'PF'});
+MERGE (booker:Player {id:'P18', name:'Devin Booker', position:'SG'});
+MERGE (luka:Player {id:'P19', name:'Luka Doncic', position:'PG'});
+MERGE (kyrie:Player {id:'P20', name:'Kyrie Irving', position:'SG'});
+
+// Relationships: Estrutura dos Times
+MERGE (den)-[:HOME_ARENA]->(ball);
+MERGE (mil)-[:HOME_ARENA]->(fiserv);
+MERGE (phx)-[:HOME_ARENA]->(foot);
+MERGE (dal)-[:HOME_ARENA]->(aac);
+
+MERGE (malone)-[:COACHES {since:2015}]->(den);
+MERGE (doc)-[:COACHES {since:2024}]->(mil);
+MERGE (bud)-[:COACHES {since:2024}]->(phx);
+MERGE (kidd)-[:COACHES {since:2021}]->(dal);
+
+MERGE (jokic)-[:PLAYS_FOR {number:15, since:2015}]->(den);
+MERGE (murray)-[:PLAYS_FOR {number:27, since:2016}]->(den);
+MERGE (giannis)-[:PLAYS_FOR {number:34, since:2013}]->(mil);
+MERGE (lillard)-[:PLAYS_FOR {number:0, since:2023}]->(mil);
+MERGE (durant)-[:PLAYS_FOR {number:35, since:2023}]->(phx);
+MERGE (booker)-[:PLAYS_FOR {number:1, since:2015}]->(phx);
+MERGE (luka)-[:PLAYS_FOR {number:77, since:2018}]->(dal);
+MERGE (kyrie)-[:PLAYS_FOR {number:11, since:2023}]->(dal);
+
+// Games: Novos Jogos (Misturando times novos e antigos)
+MERGE (g5:Game {id:'G5', date:date('2024-11-08')}); // DEN vs PHX
+MERGE (g6:Game {id:'G6', date:date('2024-11-10')}); // MIL vs DAL
+MERGE (g7:Game {id:'G7', date:date('2024-11-12')}); // LAL vs DEN (Importante: conecta cluster antigo com novo)
+MERGE (g8:Game {id:'G8', date:date('2024-11-14')}); // BOS vs MIL (Importante: conecta cluster antigo com novo)
+
+MERGE (g5)-[:IN_SEASON]->(season);
+MERGE (g6)-[:IN_SEASON]->(season);
+MERGE (g7)-[:IN_SEASON]->(season);
+MERGE (g8)-[:IN_SEASON]->(season);
+
+MERGE (g5)-[:PLAYED_AT]->(ball);
+MERGE (g6)-[:PLAYED_AT]->(fiserv);
+MERGE (g7)-[:PLAYED_AT]->(crypto);
+MERGE (g8)-[:PLAYED_AT]->(tdg);
+
+MERGE (g5)-[:HOME_TEAM {score:120}]->(den);
+MERGE (g5)-[:AWAY_TEAM {score:115}]->(phx);
+
+MERGE (g6)-[:HOME_TEAM {score:110}]->(mil);
+MERGE (g6)-[:AWAY_TEAM {score:118}]->(dal);
+
+MERGE (g7)-[:HOME_TEAM {score:108}]->(lal);
+MERGE (g7)-[:AWAY_TEAM {score:114}]->(den);
+
+MERGE (g8)-[:HOME_TEAM {score:125}]->(bos);
+MERGE (g8)-[:AWAY_TEAM {score:122}]->(mil);
+
+// Player Stats: Stats dos novos jogos
+// G5: Jokic/Murray vs Durant/Booker
+MERGE (jokic)-[:PLAYED_IN {points:35, rebounds:14, assists:10, minutes:38}]->(g5);
+MERGE (murray)-[:PLAYED_IN {points:22, rebounds:4, assists:8, minutes:36}]->(g5);
+MERGE (durant)-[:PLAYED_IN {points:31, rebounds:7, assists:3, minutes:39}]->(g5);
+MERGE (booker)-[:PLAYED_IN {points:28, rebounds:5, assists:6, minutes:38}]->(g5);
+
+// G6: Giannis/Lillard vs Luka/Kyrie
+MERGE (giannis)-[:PLAYED_IN {points:30, rebounds:12, assists:5, minutes:35}]->(g6);
+MERGE (lillard)-[:PLAYED_IN {points:24, rebounds:3, assists:8, minutes:36}]->(g6);
+MERGE (luka)-[:PLAYED_IN {points:38, rebounds:9, assists:11, minutes:40}]->(g6);
+MERGE (kyrie)-[:PLAYED_IN {points:26, rebounds:4, assists:5, minutes:37}]->(g6);
+
+// G7: LeBron/Davis vs Jokic/Murray (Conectando os grafos)
+MERGE (lebron)-[:PLAYED_IN {points:26, rebounds:7, assists:7, minutes:35}]->(g7);
+MERGE (davis)-[:PLAYED_IN {points:24, rebounds:10, assists:2, minutes:36}]->(g7);
+MERGE (jokic)-[:PLAYED_IN {points:29, rebounds:13, assists:8, minutes:37}]->(g7);
+MERGE (murray)-[:PLAYED_IN {points:20, rebounds:3, assists:6, minutes:34}]->(g7);
+
+// G8: Tatum/Brown vs Giannis/Lillard (Conectando os grafos)
+MERGE (tatum)-[:PLAYED_IN {points:33, rebounds:8, assists:4, minutes:38}]->(g8);
+MERGE (brown)-[:PLAYED_IN {points:25, rebounds:6, assists:3, minutes:36}]->(g8);
+MERGE (giannis)-[:PLAYED_IN {points:36, rebounds:11, assists:4, minutes:37}]->(g8);
+MERGE (lillard)-[:PLAYED_IN {points:21, rebounds:2, assists:9, minutes:35}]->(g8);
