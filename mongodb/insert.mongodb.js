@@ -1,0 +1,200 @@
+db.arenas.insertMany([
+  { _id: "CRYPTO", name: "Crypto.com Arena", city: "Los Angeles" },
+  { _id: "CHASE", name: "Chase Center", city: "San Francisco" },
+  { _id: "TDG", name: "TD Garden", city: "Boston" },
+  { _id: "KASEYA", name: "Kaseya Center", city: "Miami" },
+  { _id: "BALL", name: "Ball Arena", city: "Denver" },
+  { _id: "FISERV", name: "Fiserv Forum", city: "Milwaukee" },
+  { _id: "FOOT", name: "Footprint Center", city: "Phoenix" },
+  { _id: "AAC", name: "American Airlines Center", city: "Dallas" }
+]);
+
+db.teams.insertMany([
+  { 
+    _id: "LAL", name: "Los Angeles Lakers", city: "Los Angeles", conference: "West", division: "Pacific",
+    arena_id: "CRYPTO",
+    coach: { name: "Darvin Ham", since: 2022 }
+  },
+  { 
+    _id: "GSW", name: "Golden State Warriors", city: "San Francisco", conference: "West", division: "Pacific",
+    arena_id: "CHASE",
+    coach: { name: "Steve Kerr", since: 2014 }
+  },
+  { 
+    _id: "BOS", name: "Boston Celtics", city: "Boston", conference: "East", division: "Atlantic",
+    arena_id: "TDG",
+    coach: { name: "Joe Mazzulla", since: 2022 }
+  },
+  { 
+    _id: "MIA", name: "Miami Heat", city: "Miami", conference: "East", division: "Southeast",
+    arena_id: "KASEYA",
+    coach: { name: "Erik Spoelstra", since: 2008 }
+  },
+  { 
+    _id: "DEN", name: "Denver Nuggets", city: "Denver", conference: "West", division: "Northwest",
+    arena_id: "BALL",
+    coach: { name: "Michael Malone", since: 2015 }
+  },
+  { 
+    _id: "MIL", name: "Milwaukee Bucks", city: "Milwaukee", conference: "East", division: "Central",
+    arena_id: "FISERV",
+    coach: { name: "Doc Rivers", since: 2024 }
+  },
+  { 
+    _id: "PHX", name: "Phoenix Suns", city: "Phoenix", conference: "West", division: "Pacific",
+    arena_id: "FOOT",
+    coach: { name: "Mike Budenholzer", since: 2024 }
+  },
+  { 
+    _id: "DAL", name: "Dallas Mavericks", city: "Dallas", conference: "West", division: "Southwest",
+    arena_id: "AAC",
+    coach: { name: "Jason Kidd", since: 2021 }
+  }
+]);
+
+db.players.insertMany([
+  { _id: "P1", name: "LeBron James", position: "SF", number: 23, team_id: "LAL" },
+  { _id: "P2", name: "Anthony Davis", position: "C", number: 3, team_id: "LAL" },
+  { _id: "P3", name: "D'Angelo Russell", position: "PG", number: 1, team_id: "LAL" },
+  { _id: "P4", name: "Stephen Curry", position: "PG", number: 30, team_id: "GSW" },
+  { _id: "P5", name: "Klay Thompson", position: "SG", number: 11, team_id: "GSW" },
+  { _id: "P6", name: "Draymond Green", position: "PF", number: 23, team_id: "GSW" },
+  { _id: "P7", name: "Jayson Tatum", position: "SF", number: 0, team_id: "BOS" },
+  { _id: "P8", name: "Jaylen Brown", position: "SG", number: 7, team_id: "BOS" },
+  { _id: "P9", name: "Jrue Holiday", position: "PG", number: 4, team_id: "BOS" },
+  { _id: "P10", name: "Jimmy Butler", position: "SF", number: 22, team_id: "MIA" },
+  { _id: "P11", name: "Bam Adebayo", position: "C", number: 13, team_id: "MIA" },
+  { _id: "P12", name: "Tyler Herro", position: "SG", number: 14, team_id: "MIA" },
+  { _id: "P13", name: "Nikola Jokic", position: "C", number: 15, team_id: "DEN" },
+  { _id: "P14", name: "Jamal Murray", position: "PG", number: 27, team_id: "DEN" },
+  { _id: "P15", name: "Giannis Antetokounmpo", position: "PF", number: 34, team_id: "MIL" },
+  { _id: "P16", name: "Damian Lillard", position: "PG", number: 0, team_id: "MIL" },
+  { _id: "P17", name: "Kevin Durant", position: "PF", number: 35, team_id: "PHX" },
+  { _id: "P18", name: "Devin Booker", position: "SG", number: 1, team_id: "PHX" },
+  { _id: "P19", name: "Luka Doncic", position: "PG", number: 77, team_id: "DAL" },
+  { _id: "P20", name: "Kyrie Irving", position: "SG", number: 11, team_id: "DAL" }
+]);
+
+db.games.insertMany([
+  {
+    _id: "G1",
+    date: ISODate("2024-11-01"),
+    season: "2024-25",
+    arena_id: "CRYPTO",
+    home_team: { team_id: "LAL", score: 112 },
+    away_team: { team_id: "GSW", score: 108 },
+    player_stats: [
+      { player_id: "P1", points: 28, rebounds: 7, assists: 8 },
+      { player_id: "P2", points: 24, rebounds: 12, assists: 3 },
+      { player_id: "P3", points: 15, rebounds: 4, assists: 6 },
+      { player_id: "P4", points: 30, rebounds: 5, assists: 7 },
+      { player_id: "P5", points: 18, rebounds: 3, assists: 2 },
+      { player_id: "P6", points: 10, rebounds: 9, assists: 8 }
+    ]
+  },
+  {
+    _id: "G2",
+    date: ISODate("2024-11-03"),
+    season: "2024-25",
+    arena_id: "TDG",
+    home_team: { team_id: "BOS", score: 118 },
+    away_team: { team_id: "MIA", score: 110 },
+    player_stats: [
+      { player_id: "P7", points: 32, rebounds: 9, assists: 5 },
+      { player_id: "P8", points: 24, rebounds: 6, assists: 3 },
+      { player_id: "P9", points: 14, rebounds: 4, assists: 8 },
+      { player_id: "P10", points: 26, rebounds: 6, assists: 4 },
+      { player_id: "P11", points: 20, rebounds: 11, assists: 3 },
+      { player_id: "P12", points: 18, rebounds: 3, assists: 4 }
+    ]
+  },
+  {
+    _id: "G3",
+    date: ISODate("2024-11-05"),
+    season: "2024-25",
+    arena_id: "CHASE",
+    home_team: { team_id: "GSW", score: 121 },
+    away_team: { team_id: "BOS", score: 125 },
+    player_stats: [
+      { player_id: "P4", points: 34, rebounds: 4, assists: 9 },
+      { player_id: "P5", points: 20, rebounds: 3, assists: 3 },
+      { player_id: "P6", points: 12, rebounds: 10, assists: 7 },
+      { player_id: "P7", points: 29, rebounds: 8, assists: 6 },
+      { player_id: "P8", points: 22, rebounds: 5, assists: 2 },
+      { player_id: "P9", points: 16, rebounds: 3, assists: 7 }
+    ]
+  },
+  {
+    _id: "G4",
+    date: ISODate("2024-11-07"),
+    season: "2024-25",
+    arena_id: "KASEYA",
+    home_team: { team_id: "MIA", score: 102 },
+    away_team: { team_id: "LAL", score: 99 },
+    player_stats: [
+      { player_id: "P10", points: 27, rebounds: 7, assists: 5 },
+      { player_id: "P11", points: 18, rebounds: 13, assists: 2 },
+      { player_id: "P12", points: 21, rebounds: 4, assists: 5 },
+      { player_id: "P1", points: 25, rebounds: 6, assists: 7 },
+      { player_id: "P2", points: 22, rebounds: 14, assists: 2 },
+      { player_id: "P3", points: 13, rebounds: 3, assists: 8 }
+    ]
+  },
+  {
+    _id: "G5",
+    date: ISODate("2024-11-08"),
+    season: "2024-25",
+    arena_id: "BALL",
+    home_team: { team_id: "DEN", score: 120 },
+    away_team: { team_id: "PHX", score: 115 },
+    player_stats: [
+      { player_id: "P13", points: 35, rebounds: 14, assists: 10 },
+      { player_id: "P14", points: 22, rebounds: 4, assists: 8 },
+      { player_id: "P17", points: 31, rebounds: 7, assists: 3 },
+      { player_id: "P18", points: 28, rebounds: 5, assists: 6 }
+    ]
+  },
+  {
+    _id: "G6",
+    date: ISODate("2024-11-10"),
+    season: "2024-25",
+    arena_id: "FISERV",
+    home_team: { team_id: "MIL", score: 110 },
+    away_team: { team_id: "DAL", score: 118 },
+    player_stats: [
+      { player_id: "P15", points: 30, rebounds: 12, assists: 5 },
+      { player_id: "P16", points: 24, rebounds: 3, assists: 8 },
+      { player_id: "P19", points: 38, rebounds: 9, assists: 11 },
+      { player_id: "P20", points: 26, rebounds: 4, assists: 5 }
+    ]
+  },
+  {
+    _id: "G7",
+    date: ISODate("2024-11-12"),
+    season: "2024-25",
+    arena_id: "CRYPTO",
+    home_team: { team_id: "LAL", score: 108 },
+    away_team: { team_id: "DEN", score: 114 },
+    player_stats: [
+      { player_id: "P1", points: 26, rebounds: 7, assists: 7 },
+      { player_id: "P2", points: 24, rebounds: 10, assists: 2 },
+      { player_id: "P13", points: 29, rebounds: 13, assists: 8 },
+      { player_id: "P14", points: 20, rebounds: 3, assists: 6 }
+    ]
+  },
+  {
+    _id: "G8",
+    date: ISODate("2024-11-14"),
+    season: "2024-25",
+    arena_id: "TDG",
+    home_team: { team_id: "BOS", score: 125 },
+    away_team: { team_id: "MIL", score: 122 },
+    player_stats: [
+      { player_id: "P7", points: 33, rebounds: 8, assists: 4 },
+      { player_id: "P8", points: 25, rebounds: 6, assists: 3 },
+      { player_id: "P15", points: 36, rebounds: 11, assists: 4 },
+      { player_id: "P16", points: 21, rebounds: 2, assists: 9 }
+    ]
+  }
+]);
+
