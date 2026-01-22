@@ -72,7 +72,6 @@ db.games.aggregate([
           else: "$away_team.team_id"
         }
       },
-      date: 1
     }
   },
   { $sort: { date: 1 } }
@@ -131,7 +130,7 @@ db.games.aggregate([
       avgPoints: { $round: ["$avgPoints", 1] }
     }
   },
-  { $sort: { avgPoints: -1 } }
+  { $sort: { avgPoints: -1, player: 1 } }
 ]);
 
 // -----------------------------------------------------------------------------
@@ -205,7 +204,7 @@ db.games.aggregate([
       wins: { $sum: 1 }
     }
   },
-  { $sort: { wins: -1 } }
+  { $sort: { wins: -1 , _id: 1 } }
 ]);
 
 // -----------------------------------------------------------------------------
@@ -361,12 +360,40 @@ db.games.aggregate([
       pct: { $round: [{ $multiply: [{ $divide: ["$wins", "$totalGames"] }, 100] }, 1] }
     }
   },
-  { $sort: { pct: -1 } }
+  { $sort: { pct: -1, _id: 1 } }
 ]);
 
 // -----------------------------------------------------------------------------
 // Q14: Consistência (Desvio Padrão)
 // -----------------------------------------------------------------------------
+// db.games.aggregate([
+//   { $unwind: "$player_stats" },
+//   {
+//     $lookup: {
+//       from: "players",
+//       localField: "player_stats.player_id",
+//       foreignField: "_id",
+//       as: "p"
+//     }
+//   },
+//   { $unwind: "$p" },
+//   {
+//     $group: {
+//       _id: "$p.name",
+//       avg: { $avg: "$player_stats.points" },
+//       stdDev: { $stdDevPop: "$player_stats.points" }
+//     }
+//   },
+//   {
+//     $project: {
+//       player: "$_id",
+//       avgPoints: { $round: ["$avg", 1] },
+//       consistency: { $round: ["$stdDev", 2] }
+//     }
+//   },
+//   { $sort: { consistency: 1 , _id: 1 } }
+// ]);
+
 db.games.aggregate([
   { $unwind: "$player_stats" },
   {
@@ -382,17 +409,18 @@ db.games.aggregate([
     $group: {
       _id: "$p.name",
       avg: { $avg: "$player_stats.points" },
-      stdDev: { $stdDevPop: "$player_stats.points" }
+      stdDev: { $stdDevSamp: "$player_stats.points" }
     }
   },
   {
     $project: {
+      _id: 0,
       player: "$_id",
       avgPoints: { $round: ["$avg", 1] },
       consistency: { $round: ["$stdDev", 2] }
     }
   },
-  { $sort: { consistency: 1 } }
+  { $sort: { consistency: 1, player: 1 } }
 ]);
 
 // -----------------------------------------------------------------------------
@@ -415,7 +443,7 @@ db.games.aggregate([
       diff: 1
     }
   },
-  { $sort: { diff: 1 } }
+  { $sort: { diff: 1, _id: 1 } }
 ]);
 
 // -----------------------------------------------------------------------------
@@ -534,7 +562,7 @@ db.games.aggregate([
       avgAwayPoints: { $avg: "$player_stats.points" }
     }
   },
-  { $sort: { avgAwayPoints: -1 } }
+  { $sort: { avgAwayPoints: -1, _id: 1 } }
 ]);
 
 // -----------------------------------------------------------------------------
