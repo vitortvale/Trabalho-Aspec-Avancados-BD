@@ -12,6 +12,7 @@ def backup_python_puro(uri, db_name, output_file):
     
     # Itera sobre todas as coleções
     for collection_name in db.list_collection_names():
+        print(f"Exportando coleção: {collection_name}")
         # Converte o cursor para lista
         data = list(db[collection_name].find())
         backup_data[collection_name] = data
@@ -22,9 +23,9 @@ def backup_python_puro(uri, db_name, output_file):
 
 if __name__ == "__main__":
     # Exemplo de uso
-    URI = "mongodb://localhost:27017"
-    BANCO = "meu_banco"
-    ARQUIVO = "backup_completo.json"
+    URI = "mongodb+srv://aabd:aabd@cluster0.jqosrul.mongodb.net/?appName=Cluster0"
+    BANCO = "test"
+    ARQUIVO = "dumpmonfodb.json"
     
     print(f"Iniciando exportação de {BANCO}...")
     backup_python_puro(URI, BANCO, ARQUIVO)
