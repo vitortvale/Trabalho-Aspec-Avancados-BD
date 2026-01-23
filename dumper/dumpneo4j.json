@@ -1,0 +1,1597 @@
+{
+    "meta": {
+        "origem": "neo4j+s://708ee9de.databases.neo4j.io",
+        "tipo": "Full Dump JSON"
+    },
+    "nos": [
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "labels": [
+                "Season"
+            ],
+            "properties": {
+                "year": 2024,
+                "name": "2024-25",
+                "id": "2024"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "Los Angeles",
+                "name": "Crypto.com Arena",
+                "id": "CRYPTO"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:2",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "Boston",
+                "name": "TD Garden",
+                "id": "TDG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:3",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "Miami",
+                "name": "Kaseya Center",
+                "id": "KASEYA"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:4",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Jamal Murray",
+                "id": "P14",
+                "position": "PG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:5",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Devin Booker",
+                "id": "P18",
+                "position": "SG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-10",
+                "id": "G6"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:9",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Giannis Antetokounmpo",
+                "id": "P15",
+                "position": "PF"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Atlantic",
+                "conference": "East",
+                "city": "Boston",
+                "name": "Boston Celtics",
+                "id": "BOS"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Southeast",
+                "conference": "East",
+                "city": "Miami",
+                "name": "Miami Heat",
+                "id": "MIA"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:12",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Northwest",
+                "conference": "West",
+                "city": "Denver",
+                "name": "Denver Nuggets",
+                "id": "DEN"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:13",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Damian Lillard",
+                "id": "P16",
+                "position": "PG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-12",
+                "id": "G7"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:15",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Southwest",
+                "conference": "West",
+                "city": "Dallas",
+                "name": "Dallas Mavericks",
+                "id": "DAL"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:16",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Darvin Ham",
+                "id": "C1"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:17",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Kevin Durant",
+                "id": "P17",
+                "position": "PF"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-03",
+                "id": "G2"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:19",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Nikola Jokic",
+                "id": "P13",
+                "position": "C"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:20",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Tyler Herro",
+                "id": "P12",
+                "position": "SG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:22",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Mike Budenholzer",
+                "id": "C7"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:23",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Jason Kidd",
+                "id": "C8"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:24",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "LeBron James",
+                "id": "P1",
+                "position": "SF"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:25",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Anthony Davis",
+                "id": "P2",
+                "position": "C"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:26",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Klay Thompson",
+                "id": "P5",
+                "position": "SG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:27",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Michael Malone",
+                "id": "C5"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:129",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "San Francisco",
+                "name": "Chase Center",
+                "id": "CHASE"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:130",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Erik Spoelstra",
+                "id": "C4"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-05",
+                "id": "G3"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:132",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "Denver",
+                "name": "Ball Arena",
+                "id": "BALL"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:133",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "Milwaukee",
+                "name": "Fiserv Forum",
+                "id": "FISERV"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:134",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "Phoenix",
+                "name": "Footprint Center",
+                "id": "FOOT"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:135",
+            "labels": [
+                "Arena"
+            ],
+            "properties": {
+                "city": "Dallas",
+                "name": "American Airlines Center",
+                "id": "AAC"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Pacific",
+                "conference": "West",
+                "city": "Los Angeles",
+                "name": "Los Angeles Lakers",
+                "id": "LAL"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Pacific",
+                "conference": "West",
+                "city": "San Francisco",
+                "name": "Golden State Warriors",
+                "id": "GSW"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:138",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Central",
+                "conference": "East",
+                "city": "Milwaukee",
+                "name": "Milwaukee Bucks",
+                "id": "MIL"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:139",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Bam Adebayo",
+                "id": "P11",
+                "position": "C"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:140",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Kyrie Irving",
+                "id": "P20",
+                "position": "SG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-01",
+                "id": "G1"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:142",
+            "labels": [
+                "Team"
+            ],
+            "properties": {
+                "division": "Pacific",
+                "conference": "West",
+                "city": "Phoenix",
+                "name": "Phoenix Suns",
+                "id": "PHX"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-08",
+                "id": "G5"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:144",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Joe Mazzulla",
+                "id": "C3"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:145",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Steve Kerr",
+                "id": "C2"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:147",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Luka Doncic",
+                "id": "P19",
+                "position": "PG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:149",
+            "labels": [
+                "Coach"
+            ],
+            "properties": {
+                "name": "Doc Rivers",
+                "id": "C6"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:150",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Jimmy Butler",
+                "id": "P10",
+                "position": "SF"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-07",
+                "id": "G4"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "labels": [
+                "Game"
+            ],
+            "properties": {
+                "date": "2024-11-14",
+                "id": "G8"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:153",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "D'Angelo Russell",
+                "id": "P3",
+                "position": "PG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:154",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Stephen Curry",
+                "id": "P4",
+                "position": "PG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:156",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Draymond Green",
+                "id": "P6",
+                "position": "PF"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:157",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Jayson Tatum",
+                "id": "P7",
+                "position": "SF"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:158",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Jrue Holiday",
+                "id": "P9",
+                "position": "PG"
+            }
+        },
+        {
+            "id": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:159",
+            "labels": [
+                "Player"
+            ],
+            "properties": {
+                "name": "Jaylen Brown",
+                "id": "P8",
+                "position": "SG"
+            }
+        }
+    ],
+    "relacionamentos": [
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102532",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:4",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:12",
+            "properties": {
+                "number": 27
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926660",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:4",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "properties": {
+                "rebounds": 3,
+                "assists": 6,
+                "points": 20
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241412",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:4",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "properties": {
+                "rebounds": 4,
+                "assists": 8,
+                "points": 22
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102533",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:5",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:142",
+            "properties": {
+                "number": 1
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241413",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:5",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "properties": {
+                "rebounds": 5,
+                "assists": 6,
+                "points": 28
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730310",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358086",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:133",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164985862",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:138",
+            "properties": {
+                "score": 110
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613638",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:15",
+            "properties": {
+                "score": 118
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102537",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:9",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:138",
+            "properties": {
+                "number": 34
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241417",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:9",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "properties": {
+                "rebounds": 12,
+                "assists": 5,
+                "points": 30
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926665",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:9",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "properties": {
+                "rebounds": 11,
+                "assists": 4,
+                "points": 36
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606846986",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:2",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606846987",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:3",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606846988",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:12",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:132",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102541",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:13",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:138",
+            "properties": {
+                "number": 0
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241421",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:13",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "properties": {
+                "rebounds": 3,
+                "assists": 8,
+                "points": 24
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926669",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:13",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "properties": {
+                "rebounds": 2,
+                "assists": 9,
+                "points": 21
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730318",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358094",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164985870",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "properties": {
+                "score": 108
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613646",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:12",
+            "properties": {
+                "score": 114
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606846991",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:15",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:135",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474768",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:16",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "properties": {
+                "since": 2022
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102545",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:17",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:142",
+            "properties": {
+                "number": 35
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241425",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:17",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "properties": {
+                "rebounds": 7,
+                "assists": 3,
+                "points": 31
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730322",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358098",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:2",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164985874",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "properties": {
+                "score": 118
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613650",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "properties": {
+                "score": 110
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102547",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:19",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:12",
+            "properties": {
+                "number": 15
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926675",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:19",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "properties": {
+                "rebounds": 13,
+                "assists": 8,
+                "points": 29
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241427",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:19",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "properties": {
+                "rebounds": 14,
+                "assists": 10,
+                "points": 35
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102548",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:20",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "properties": {
+                "number": 14
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241428",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:20",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "properties": {
+                "rebounds": 3,
+                "assists": 4,
+                "points": 18
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926676",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:20",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "properties": {
+                "rebounds": 4,
+                "assists": 5,
+                "points": 21
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474774",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:22",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:142",
+            "properties": {
+                "since": 2024
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474775",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:23",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:15",
+            "properties": {
+                "since": 2021
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102552",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:24",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "properties": {
+                "number": 23
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1157432800815611928",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:24",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "properties": {
+                "rebounds": 7,
+                "assists": 7,
+                "points": 26
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241432",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:24",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "properties": {
+                "rebounds": 7,
+                "assists": 8,
+                "points": 28
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926680",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:24",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "properties": {
+                "rebounds": 6,
+                "assists": 7,
+                "points": 25
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102553",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:25",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "properties": {
+                "number": 3
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1157432800815611929",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:25",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:14",
+            "properties": {
+                "rebounds": 10,
+                "assists": 2,
+                "points": 24
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241433",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:25",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "properties": {
+                "rebounds": 12,
+                "assists": 3,
+                "points": 24
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926681",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:25",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "properties": {
+                "rebounds": 14,
+                "assists": 2,
+                "points": 22
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102554",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:26",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "properties": {
+                "number": 11
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926682",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:26",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "properties": {
+                "rebounds": 3,
+                "assists": 3,
+                "points": 20
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241434",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:26",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "properties": {
+                "rebounds": 3,
+                "assists": 2,
+                "points": 18
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474779",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:27",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:12",
+            "properties": {
+                "since": 2015
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474882",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:130",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "properties": {
+                "since": 2008
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730435",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358211",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:129",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164985987",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "properties": {
+                "score": 121
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613763",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "properties": {
+                "score": 125
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606847112",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606847113",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:129",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606847114",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:138",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:133",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102667",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:139",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "properties": {
+                "number": 13
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241547",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:139",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "properties": {
+                "rebounds": 11,
+                "assists": 3,
+                "points": 20
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926795",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:139",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "properties": {
+                "rebounds": 13,
+                "assists": 2,
+                "points": 18
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102668",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:140",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:15",
+            "properties": {
+                "number": 11
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241548",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:140",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "properties": {
+                "rebounds": 4,
+                "assists": 5,
+                "points": 26
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730445",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358221",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164985997",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "properties": {
+                "score": 112
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613773",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "properties": {
+                "score": 108
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152921504606847118",
+            "type": "HOME_ARENA",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:142",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:134",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730447",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358223",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:132",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164985999",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:12",
+            "properties": {
+                "score": 120
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613775",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:143",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:142",
+            "properties": {
+                "score": 115
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474896",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:144",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "properties": {
+                "since": 2022
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474897",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:145",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "properties": {
+                "since": 2014
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102675",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:147",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:15",
+            "properties": {
+                "number": 77
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241555",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:147",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:6",
+            "properties": {
+                "rebounds": 9,
+                "assists": 11,
+                "points": 38
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152922604118474901",
+            "type": "COACHES",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:149",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:138",
+            "properties": {
+                "since": 2024
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102678",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:150",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "properties": {
+                "number": 22
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241558",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:150",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "properties": {
+                "rebounds": 6,
+                "assists": 4,
+                "points": 26
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926806",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:150",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "properties": {
+                "rebounds": 7,
+                "assists": 5,
+                "points": 27
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730455",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358231",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:3",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164986007",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:11",
+            "properties": {
+                "score": 102
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613783",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "properties": {
+                "score": 99
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152924803141730456",
+            "type": "IN_SEASON",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:0",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152925902653358232",
+            "type": "PLAYED_AT",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:2",
+            "properties": {}
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152927002164986008",
+            "type": "HOME_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "properties": {
+                "score": 125
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152928101676613784",
+            "type": "AWAY_TEAM",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:138",
+            "properties": {
+                "score": 122
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102681",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:153",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:136",
+            "properties": {
+                "number": 1
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241561",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:153",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "properties": {
+                "rebounds": 4,
+                "assists": 6,
+                "points": 15
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926809",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:153",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:151",
+            "properties": {
+                "rebounds": 3,
+                "assists": 8,
+                "points": 13
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102682",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:154",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "properties": {
+                "number": 30
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926810",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:154",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "properties": {
+                "rebounds": 4,
+                "assists": 9,
+                "points": 34
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241562",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:154",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "properties": {
+                "rebounds": 5,
+                "assists": 7,
+                "points": 30
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102684",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:156",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:137",
+            "properties": {
+                "number": 23
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926812",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:156",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "properties": {
+                "rebounds": 10,
+                "assists": 7,
+                "points": 12
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241564",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:156",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:141",
+            "properties": {
+                "rebounds": 9,
+                "assists": 8,
+                "points": 10
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102685",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:157",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "properties": {
+                "number": 0
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241565",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:157",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "properties": {
+                "rebounds": 9,
+                "assists": 5,
+                "points": 32
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926813",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:157",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "properties": {
+                "rebounds": 8,
+                "assists": 6,
+                "points": 29
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1157432800815612061",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:157",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "properties": {
+                "rebounds": 8,
+                "assists": 4,
+                "points": 33
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102686",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:158",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "properties": {
+                "number": 4
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241566",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:158",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "properties": {
+                "rebounds": 4,
+                "assists": 8,
+                "points": 14
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926814",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:158",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "properties": {
+                "rebounds": 3,
+                "assists": 7,
+                "points": 16
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152923703630102687",
+            "type": "PLAYS_FOR",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:159",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:10",
+            "properties": {
+                "number": 7
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1152929201188241567",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:159",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:18",
+            "properties": {
+                "rebounds": 6,
+                "assists": 3,
+                "points": 24
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1155181001001926815",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:159",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:131",
+            "properties": {
+                "rebounds": 5,
+                "assists": 2,
+                "points": 22
+            }
+        },
+        {
+            "id": "5:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:1157432800815612063",
+            "type": "PLAYED_IN",
+            "start_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:159",
+            "end_node": "4:7d53d204-ba8b-4047-a0c6-2b6b0b434d39:152",
+            "properties": {
+                "rebounds": 6,
+                "assists": 3,
+                "points": 25
+            }
+        }
+    ]
+}
