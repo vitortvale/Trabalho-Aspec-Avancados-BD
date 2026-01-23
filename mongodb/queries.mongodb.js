@@ -74,7 +74,7 @@ db.games.aggregate([
       },
     }
   },
-  { $sort: { date: 1 } }
+  { $sort: { game: 1 } }
 ]);
 
 // -----------------------------------------------------------------------------
@@ -130,7 +130,8 @@ db.games.aggregate([
       avgPoints: { $round: ["$avgPoints", 1] }
     }
   },
-  { $sort: { avgPoints: -1, player: 1 } }
+  { $sort: { avgPoints: -1, player: 1 } },
+  { $limit: 5 }
 ]);
 
 // -----------------------------------------------------------------------------
@@ -229,7 +230,6 @@ db.games.aggregate([
 // Estratégia: Filtrar jogos onde LAL jogou (casa ou fora), filtrar stats > 25, remover jogadores do LAL.
 // -----------------------------------------------------------------------------
 db.games.aggregate([
-  // 1. Jogos envolvendo LAL
   {
     $match: {
       $or: [
@@ -239,7 +239,6 @@ db.games.aggregate([
     }
   },
   { $unwind: "$player_stats" },
-  // 2. Pontuação alta
   { $match: { "player_stats.points": { $gte: 25 } } },
   {
     $lookup: {
@@ -250,7 +249,6 @@ db.games.aggregate([
     }
   },
   { $unwind: "$p" },
-  // 3. Garantir que não é jogador do LAL
   { $match: { "p.team_id": { $ne: "LAL" } } },
   {
     $project: {
@@ -293,7 +291,8 @@ db.games.aggregate([
       pointsInWins: { $sum: "$player_stats.points" }
     }
   },
-  { $sort: { pointsInWins: -1 } }
+  { $sort: { pointsInWins: -1 } },
+  {$limit: 5}
 ]);
 
 // -----------------------------------------------------------------------------
@@ -336,7 +335,8 @@ db.games.aggregate([
       pct: { $round: [{ $multiply: [{ $divide: ["$pPoints", "$tPoints"] }, 100] }, 1] }
     }
   },
-  { $sort: { pct: -1 } }
+  { $sort: { pct: -1 } },
+  { $limit: 5 }
 ]);
 
 // -----------------------------------------------------------------------------
@@ -420,7 +420,8 @@ db.games.aggregate([
       consistency: { $round: ["$stdDev", 2] }
     }
   },
-  { $sort: { consistency: 1, player: 1 } }
+  { $sort: { consistency: 1, player: 1 } },
+  { $limit: 5 }
 ]);
 
 // -----------------------------------------------------------------------------
